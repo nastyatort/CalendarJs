@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="MobileOptimized" content="320">
+    <meta name="description" content="">
+    <meta name='copyright' content="">
+    <meta name="og:title" content="">
+    <meta name="og:image" content="">
+    <meta name="og:description" content="">
+    <meta name="og:email" content="">
+    <meta name="og:phone_number" content="+380">
+    <meta name="fb:page_id" content="">
+
+    <title>Calendar</title>
+    <!--[if IE]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+    <!--[if lt IE 9]>
+    <p class="browserupgrade" style="color: #fff;background: #000;padding: 20px 15px; text-align: center;">You are using
+        an
+        <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your
+        experience.</p>
+    <![endif]-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<div class="calendar__wrapper" id="calendar__wrapper">
+<div class="wrapper">
+    <div class="controller">
+        <div class="today" id="today">Today</div>
+        <div class="month__title" id="month__title"></div>
+        <div class="arrow__wrapper">
+            <div class="prev" id="prev">prev</div>
+            <div class="next" id="next">next</div>
+        </div>
+    </div>
+
+<div class="calendar">
+    <div class="title">
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+        <div>Sun</div>
+    </div>
+</div>
+</div>
+
+<div class="month" id="month"></div>
+
+
+<p>календарь</p>
+    <div class="modal" id="modal">
+        <div class="title">Type text</div>
+        <div id="textarea__wrapper"></div>
+        <div id="btn__wrapper">
+            <button id="cancel">cancel</button>
+            <div id="save__wrapper"></div>
+        </div>
+    </div>
+
+
+
+    <div class="event__modal" id="event__modal">
+        <div class="event__title">Title</div>
+        <div id="text__wrapper"></div>
+        <button id="event__cancel">Close</button>
+    </div>
+</div>
+
+<script src="js/event.js"></script>
+<script src="js/eventList.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
